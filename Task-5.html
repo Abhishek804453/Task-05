@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Task-05</title>
+    <style>
+        body {
+            /* background-color: black; */
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('./tech.jpg');
+
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            margin: 3px 33px;
+            align-items: center;
+            /* border: 2px solid red; */
+            height: 435px;
+            justify-content: center;
+        }
+
+        /* section::before{
+            content:"This is a before section"
+        } */
+        .navigation {
+            display: flex;
+            flex-direction: row;
+            font-size: 20px;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 5px 30px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			color : red;
+        }
+
+        p {
+            text-align: center;
+            font-size: larger;
+			color : black;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: brown;
+        }
+
+        input {
+            display: block;
+            width: 250px;
+            margin: 5px 150px;
+            border-radius: 85px;
+            border: 3px solid darkgreen;
+            text-align: center;
+        }
+
+        input[type='submit'] {
+            border-radius: 45px;
+        }
+
+        .class {
+            background-color: lightgray;
+            display: inline-block;
+            padding: 20px;
+        }
+
+        .class h2 {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"><a href="">Home</a></li>
+                <li class="item"><a href="">About</a></li>
+                <li class="item"><a href="">Services</a></li>
+                <li class="item"><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Tech For America</h1>
+        <p>We're on a mission to transform education and systems that make it difficult for children to learn, lead and thrive. 
+		We train equity-driven people from every academic major, occupation, and background to teach in underserved schools for two years as a corps member. 
+		At the end of your two-year service, you'll continue growing your leadership skills by joining a diverse network of advocates working to open doors for the next generation, no matter what profession you pursue.
+		</p>
+        <p>No single solution will bring an equitable and excellent education to every child. Although we look to education to help children overcome obstacles like systemic racism and poverty,
+		our school system was not designed for today’s children who count on school to access opportunity in America. But people designed this system, and so people can reimagine and rebuild it to enable all children to reach their full potential.
+		</p>
+        <p>We believe in making the things affordable as much as possible in education industry.</p>
+    </section>
+    <hr>
+    <div class="class">
+        <form action="backend.php">
+            <h2>Resister here to explore more</h2>
+            <input type="text" placeholder="Enter your name" required>
+            <input type="email" placeholder="Enter your email" required>
+            <input type="password" placeholder="Mae a strong Password" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
